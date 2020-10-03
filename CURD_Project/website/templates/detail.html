@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <div class="details">
+    <h2>{{bat.title}}</h2>
+    <p>{{bat.text}}</p>
+  </div>
+  <a href="{%url 'edit' bat.pk%}">Edit Blog</a>
+  <a href="{%url 'art_delete' bat.pk%}">Delete Blog</a>
+
+{% endblock content %}

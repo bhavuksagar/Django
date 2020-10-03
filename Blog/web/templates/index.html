@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<title>Minimum Bootstrap HTML Skeleton</title>
+
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="{% static 'style.css'%}" class="">
+
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><i class="fas fa-blog"></i><h1 class="na animated infinite bounce ">Blogs</h1></li>
+                <li class="sem"><a class="btn btn-primary btn-lg" href="{% url 'new' %}" role="button">Add New Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<div class="container">
+
+
+	<div class="jumbotron">
+        <h1>Welcome To My Blogs</h1>
+  <p>Writter : <b>Bhavuk Sagar</b> </p>
+  <p>This Website contain bolgs related to differnet Technologies.</p>
+  <p></p>
+</div>
+{% for i in object_list %}
+    <div class="page-header ss ">
+  <a href="{% url 'detail' i.pk  %}"> <h1>{{i.id}}.{{ i.title }}</h1></a>
+	<p>{{i.text}}</p>
+
+</div>
+{% endfor %}
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script>
+	</script>
+
+</body>

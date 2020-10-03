@@ -1,0 +1,22 @@
+body{
+    background: url(img.jpeg) no-repeat center center fixed ;
+    background-size: cover;
+    opacity: inherit;
+}
+
+.sss{
+  margin-top: 20px;
+}
+
+.container{
+  margin-top: 50px;
+  border: 2px solid;
+  border-radius: 10px;
+  height: 500px;
+}
+.container h1{
+  text-align: center;
+}
+.container p{
+  font-size: 30px;
+}

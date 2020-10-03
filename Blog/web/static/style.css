@@ -1,0 +1,23 @@
+li{
+    display: inline-block;
+    list-style: none;
+}
+.sem{
+    float: right;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.na{
+    font-size: 7em;
+
+}
+body{
+    background: url(img.jpeg) no-repeat center center fixed ;
+    background-size: cover;
+    opacity: inherit;
+}
+.ss a{
+  text-decoration: none;
+  color: #524F4F;
+}

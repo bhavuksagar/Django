@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<title>Minimum Bootstrap HTML Skeleton</title>
+
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="{% static 'det.css'%}" class="">
+
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+</head>
+
+<body>
+  <a class="btn btn-primary btn-lg sss" href="{% url 'home'%}" role="button"> <i class="fas fa-house-user"></i>Go To Home Page</a>
+  <div class="container">
+    <h1 class="na animated infinite heartBeat ">{{mod.title}}</h1>
+    <p>{{mod.text}}</p>
+    <a class="btn btn-primary btn-lg sss" href="{% url 'edit' mod.pk%}" role="button">Edit</a>
+
+  </div>
